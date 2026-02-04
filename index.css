@@ -1,6 +1,6 @@
 .headerPrincipal {
     padding: 35px;
-    background-color: rgb(231, 118, 43);
+    background-color: rgb(245, 127, 48);
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -10,6 +10,36 @@
    .NavBar{
     display: flex;
     
+   }
+   .buscador{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    background: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 20px;
+    width: 600px;
+   
+   }
+   .buscador i{
+    color:#777;
+   }
+   .buscador input{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 200%;
+    font-size: 14px;
+  
+   }
+   .fa-user{
+    font-size: 30px;
+    color: white;
+   }
+   .carrito-icon{
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
    }
 
 a{
@@ -141,4 +171,123 @@ gap: 1rem;
     background-color: rgb(231, 118, 43);
     color: white;
 }
+/*menos gasto section*/
 
+.container5 {
+   padding: 40px 20px;
+   background-color: #f4f4f4;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.titulo-seccion{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    padding: 0 20px;
+}
+
+
+.contenido5 {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+   
+}
+
+/*banner lateral*/
+.fotoDesc {
+    flex: 0 0 250px; 
+}
+
+.fotoDesc img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/*slider y flechas*/
+
+.slider-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.productos5 {
+    
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cards {
+    flex: 0 0 220px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+}
+
+.cards:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.card-header .marca{
+    font-weight: bold;
+    font-size: 12px;
+    color: #333;
+    display: block;
+}
+
+.card-header .descripcion{
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+    height: 40px;
+    overflow: hidden;
+}
+.cards img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain; 
+   margin: 10px 0;
+}
+.precio{
+    font-size: 20px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.btn-agregar{
+      background-color: #5cb85c; 
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-agregar:hover {
+    background-color: #4cae4c;
+}
+
+/* Botones de navegación */
+.btnSlider {
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.btnSlider.left { left: -20px; }
+.btnSlider.right { right: -20px; }
